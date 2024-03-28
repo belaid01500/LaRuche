@@ -41,7 +41,8 @@ a {
   font-size: 1.25rem;
   color: white;
 }
-.button a:visited {
+
+a:visited {
   color: white;
 }
 .button {
