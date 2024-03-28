@@ -42,7 +42,7 @@ a {
   color: white;
 }
 
-a:visited {
+.button a:visited {
   color: white;
 }
 .button {
