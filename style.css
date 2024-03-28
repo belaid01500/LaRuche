@@ -1,0 +1,262 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --main-color: #f3c827;
+  --second-color: #593e26;
+  --third-color: #1e150c;
+  --for-color: #f66909;
+}
+
+h1 {
+  font-family: "Windsong", cursive;
+  font-size: 8rem;
+  color: var(--second-color);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--second-color);
+  width: 100%;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h3 {
+  font-size: 1rem;
+  color: var(--third-color);
+}
+
+p {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--third-color);
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+.button a:visited {
+  color: white;
+}
+.button {
+  background-color: var(--for-color);
+  padding: 7px 10px;
+  border-radius: 5px;
+  width: fit-content;
+  margin-top: 15px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bg {
+  background-color: var(--main-color);
+}
+
+.padding {
+  padding: 0 15%;
+}
+.margins {
+  margin: 6rem 0 6rem 0;
+}
+
+/*** HERO **/
+
+header {
+  height: 100vh;
+  align-items: center;
+}
+
+header div {
+  width: 60%;
+}
+header img {
+  width: 30%;
+}
+
+/************ SECTION ENGAGEMENT ***********/
+.engagement p {
+  width: 45%;
+}
+
+/************* bienfaits *********/
+
+.bienfaits div p {
+  width: 26.6%;
+}
+
+/***************** produit **************/
+
+.card {
+  width: 26.6%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 2%;
+  border-radius: 5px;
+}
+.card img {
+  width: 100%;
+}
+
+.infocarte {
+  width: 90%;
+  justify-content: center;
+}
+.infocarte h3,
+p {
+  width: 100%;
+}
+
+/**************** footer ***********/
+footer div {
+  width: 26.6%;
+}
+footer address a {
+  display: block;
+  color: var(--third-color);
+  margin-bottom: 5%;
+}
+footer address a i {
+  margin-right: 5px;
+}
+
+footer p {
+  margin-bottom: 5%;
+}
+
+/*************** Réseau **********/
+
+.column-middle a i {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.column-middle a {
+  color: var(--third-color);
+}
+
+/******************** Information ***********/
+
+.columnright a:visited {
+  color: var(--third-color);
+}
+
+.columnright ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Responsive */
+
+/******** Smartphone ********/
+
+@media screen and (max-width: 575px) {
+  header {
+    height: 100%;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  header > div {
+    padding: 10%;
+  }
+  header h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  header h2 {
+    font-size: 0.7rem;
+    width: 100%;
+  }
+  header img {
+    width: 45%;
+  }
+  a {
+    font-size: 0.7rem;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*************** Engagement *****************/
+
+  .engagement div p {
+    width: 100%;
+  }
+
+  /************ Bien faits du miel ************/
+
+  .bienfaits div p {
+    width: 100%;
+  }
+  /********************* Produits ************/
+  .card {
+    width: 100%;
+  }
+  .card img {
+    width: 38%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+  }
+  .infocarte {
+    width: 55%;
+    padding: 2%;
+  }
+  .infocarte h3 {
+    margin-bottom: 10px;
+  }
+  .infocarte p {
+    margin: 0;
+  }
+  .container-product {
+    gap: 50px;
+  }
+
+  /***************** FOOTER ***************/
+  footer {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/***** Responsive tablette horizontal *****/
+
+@media screen and (min-width: 575px) and (max-width: 1080px) {
+  header {
+    height: 100%;
+  }
+
+  header h1 {
+    font-size: 6rem;
+    margin: 0;
+  }
+  header h2 {
+    font-size: 1rem;
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+  }
+
+  /**************** Produits **********/
+
+  .card {
+    width: 30%;
+  }
+  .card h3 {
+    width: 100%;
+    font-size: 20px;
+  }
+  /***************** Footer ***********/
+}
