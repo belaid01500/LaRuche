@@ -161,33 +161,16 @@ footer p {
 
 /******** Smartphone ********/
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 768px) {
   header {
-    height: 100%;
     width: 100%;
     flex-direction: column-reverse;
   }
-  header > div {
-    padding: 10%;
+  .padding {
+    padding: 0;
   }
-  header h1 {
-    font-size: 3rem;
-    margin: 0;
-  }
-  header h2 {
-    font-size: 0.7rem;
+  .ruche {
     width: 100%;
-  }
-  header img {
-    width: 45%;
-  }
-  a {
-    font-size: 0.7rem;
-  }
-  .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   /*************** Engagement *****************/
 
